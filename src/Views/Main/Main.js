@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import Character from '../../components/Character/Character';
+import Character from '../Character/Character';
 import Head from '../../components/Dropdown/Head';
 import Middle from '../../components/Dropdown/Middle';
 import Bottom from '../../components/Dropdown/Bottom';
-import Form from '../../components/Catchphrase/Form';
-import List from '../../components/Catchphrase/List';
+import Form from '../Catchphrase/Form';
+import List from '../Catchphrase/List';
 
 export default function Main() {
   const [head, setHead] = useState('dog');
