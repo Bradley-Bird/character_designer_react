@@ -4,8 +4,8 @@ import Character from '../../components/Character/Character';
 import Head from '../../components/Dropdown/Head';
 import Middle from '../../components/Dropdown/Middle';
 import Bottom from '../../components/Dropdown/Bottom';
-import Form from '../../components/Character/Catchphrase/Form';
-import List from '../../components/Character/Catchphrase/List';
+import Form from '../../components/Catchphrase/Form';
+import List from '../../components/Catchphrase/List';
 
 export default function Main() {
   const [head, setHead] = useState('dog');
