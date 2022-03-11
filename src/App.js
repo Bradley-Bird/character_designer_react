@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Main from './components/Main/Main';
-import Character from './components/Character/Character';
 
 function App() {
   return (
