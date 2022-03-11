@@ -32,7 +32,8 @@ body {
   --footer-height: 25px;
 
   font-family: 'Titillium Web', sans-serif;
-  background-color: black;
+  background-image: url(bg.jpeg);
+  /* background-color: rgb(211, 74, 74) */
   background-size: 400px;
 }
 

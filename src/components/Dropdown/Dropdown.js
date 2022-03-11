@@ -15,7 +15,7 @@ export default function Dropdown({
     setCatchphraseArray((prevState) => [...prevState, catchphrase]);
 
     setCatchphrase('');
-    // inputRef.target.textContent = '';
+    inputRef.current.value = '';
   };
   return (
     <div className="left">
@@ -48,7 +48,7 @@ export default function Dropdown({
         </label>
         <form>
           <label>
-            Add a catch phrase
+            Add a catchphrase
             <input
               id="catchphrase-input"
               ref={inputRef}
