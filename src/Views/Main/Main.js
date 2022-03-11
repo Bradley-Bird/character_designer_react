@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Dropdown from '../Dropdown/Dropdown';
-import Character from '../Character/Character';
+import Dropdown from '../../components/Dropdown/Dropdown';
+import Character from '../../components/Character/Character';
 
 export default function Main() {
   const [head, setHead] = useState('dog');
