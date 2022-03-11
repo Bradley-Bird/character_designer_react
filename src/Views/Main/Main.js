@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 
-import Dropdown from '../../components/Dropdown/Dropdown';
 import Character from '../../components/Character/Character';
+import Head from '../../components/Dropdown/Head';
+import Middle from '../../components/Dropdown/Middle';
+import Bottom from '../../components/Dropdown/Bottom';
+import Form from '../../Catchphrase/Form';
+import List from '../../Catchphrase/List';
 
 export default function Main() {
   const [head, setHead] = useState('dog');
@@ -12,17 +16,15 @@ export default function Main() {
   return (
     <main>
       <Character {...{ head, middle, bottom }} />
-      <Dropdown
-        {...{
-          setHead,
-          setMiddle,
-          setBottom,
-          catchphrase,
-          setCatchphrase,
-          catchphraseArray,
-          setCatchphraseArray,
-        }}
-      />
+      <div className="left">
+        <div className="picker">
+          <Head {...{ setHead }} />
+          <Middle {...{ setMiddle }} />
+          <Bottom {...{ setBottom }} />
+        </div>
+        <Form {...{ catchphrase, setCatchphrase, setCatchphraseArray }} />
+        <List {...{ catchphrase, catchphraseArray }} />
+      </div>
     </main>
   );
 }
